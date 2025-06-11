@@ -1,3 +1,7 @@
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/controls/OrbitControls.js';
+import { CSS2DRenderer, CSS2DObject } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/renderers/CSS2DRenderer.js';
+
 const container = document.getElementById('simulation-container');
 
 const scene = new THREE.Scene();
@@ -8,13 +12,13 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 container.appendChild(renderer.domElement);
 
-const labelRenderer = new THREE.CSS2DRenderer();
+const labelRenderer = new CSS2DRenderer();
 labelRenderer.setSize(window.innerWidth, window.innerHeight);
 labelRenderer.domElement.style.position = 'absolute';
 labelRenderer.domElement.style.top = '0px';
 container.appendChild(labelRenderer.domElement);
 
-const controls = new THREE.OrbitControls(camera, renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 const light = new THREE.PointLight(0xffffff, 1.5);
@@ -37,7 +41,7 @@ function createLabel(text) {
     const div = document.createElement('div');
     div.className = 'label';
     div.textContent = text;
-    return new THREE.CSS2DObject(div);
+    return new CSS2DObject(div);
 }
 
 function populateBodies(data) {
