@@ -6,9 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>BrainyKidz Solar System Explorer</h1>
+    <header>
+        <h1>BrainyKidz Solar System Explorer</h1>
+        <div id="controls">
+            <input type="text" id="search" placeholder="Search..." list="bodies">
+            <datalist id="bodies"></datalist>
+            <label><input type="checkbox" id="toggle-orbits" checked> Orbits</label>
+            <label><input type="checkbox" id="toggle-labels" checked> Labels</label>
+        </div>
+    </header>
     <div id="simulation-container"></div>
+    <div id="info-panel" class="hidden"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/renderers/CSS2DRenderer.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
