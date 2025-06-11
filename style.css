@@ -4,7 +4,44 @@ body {
     background-color: #000;
     color: #fff;
 }
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #simulation-container {
     width: 100vw;
     height: 100vh;
+}
+
+#info-panel {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    max-width: 250px;
+}
+
+.hidden {
+    display: none;
+}
+.label {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
 }

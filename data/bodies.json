@@ -1,0 +1,123 @@
+[
+  {
+    "id": "sun",
+    "name": "Sun",
+    "diameter": 1391000,
+    "orbitPeriod": 0,
+    "distance": 0,
+    "gravity": 274,
+    "composition": "Hydrogen/Helium",
+    "moons": 0,
+    "color": "#ffff00",
+    "funFact": "The Sun contains most of the mass in the solar system."
+  },
+  {
+    "id": "mercury",
+    "name": "Mercury",
+    "diameter": 4879,
+    "orbitPeriod": 88,
+    "distance": 0.39,
+    "gravity": 3.7,
+    "composition": "Rocky",
+    "moons": 0,
+    "color": "#909090",
+    "funFact": "Mercury is the smallest planet."
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "diameter": 12104,
+    "orbitPeriod": 225,
+    "distance": 0.72,
+    "gravity": 8.9,
+    "composition": "Rocky",
+    "moons": 0,
+    "color": "#e6c07b",
+    "funFact": "Venus spins backward compared to most planets."
+  },
+  {
+    "id": "earth",
+    "name": "Earth",
+    "diameter": 12742,
+    "orbitPeriod": 365,
+    "distance": 1,
+    "gravity": 9.8,
+    "composition": "Rocky",
+    "moons": 1,
+    "texture": "https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_atmos_2048.jpg",
+    "funFact": "Earth is the only planet known to have life."
+  },
+  {
+    "id": "moon",
+    "name": "Moon",
+    "diameter": 3475,
+    "orbitPeriod": 27,
+    "distance": 0.0025,
+    "gravity": 1.6,
+    "composition": "Rocky",
+    "moons": 0,
+    "texture": "https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/moon_1024.jpg",
+    "parent": "earth",
+    "funFact": "The Moon always shows the same face to Earth."
+  },
+  {
+    "id": "mars",
+    "name": "Mars",
+    "diameter": 6779,
+    "orbitPeriod": 687,
+    "distance": 1.52,
+    "gravity": 3.7,
+    "composition": "Rocky",
+    "moons": 2,
+    "color": "#b5533c",
+    "funFact": "Mars is known as the Red Planet."
+  },
+  {
+    "id": "jupiter",
+    "name": "Jupiter",
+    "diameter": 139820,
+    "orbitPeriod": 4333,
+    "distance": 5.2,
+    "gravity": 24.8,
+    "composition": "Gas Giant",
+    "moons": 95,
+    "color": "#d6b27b",
+    "funFact": "Jupiter is the largest planet."
+  },
+  {
+    "id": "saturn",
+    "name": "Saturn",
+    "diameter": 116460,
+    "orbitPeriod": 10759,
+    "distance": 9.58,
+    "gravity": 10.4,
+    "composition": "Gas Giant",
+    "moons": 83,
+    "color": "#d9c189",
+    "funFact": "Saturn has the most spectacular rings."
+  },
+  {
+    "id": "uranus",
+    "name": "Uranus",
+    "diameter": 50724,
+    "orbitPeriod": 30687,
+    "distance": 19.2,
+    "gravity": 8.9,
+    "composition": "Ice Giant",
+    "moons": 27,
+    "color": "#78ced6",
+    "funFact": "Uranus rotates on its side."
+  },
+  {
+    "id": "neptune",
+    "name": "Neptune",
+    "diameter": 49244,
+    "orbitPeriod": 60190,
+    "distance": 30.05,
+    "gravity": 11,
+    "composition": "Ice Giant",
+    "moons": 14,
+    "color": "#5b79ba",
+    "funFact": "Neptune has the strongest winds in the solar system."
+  }
+]
